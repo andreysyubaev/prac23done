@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:padding="10dp"
+    tools:deviceIds="wear"
+    tools:context=".frag">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="109dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/icon"
+                tools:ignore="MissingConstraints">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text"
+                android:textColorHint="@color/aqumarine"
+                android:textColorHighlight="@color/whine"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:hint="E-mail"
+                android:padding="10dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textColorHighlight="@color/whine"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text"
+                android:hint="Password"
+                android:textColorHint="@color/aqumarine"
+                android:paddingLeft="10dp"
+                android:padding="10dp">
+            </EditText>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="120dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:onClick="take_result"
+                android:text="Sing in"
+                android:textAllCaps="false"
+                tools:ignore="MissingConstraints">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
